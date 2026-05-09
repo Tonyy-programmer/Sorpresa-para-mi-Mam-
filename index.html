@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Mam&aacute;</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero" aria-label="Sorpresa para mam&aacute;">
+      <div class="floating-petals" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Feliz D&iacute;a de las Madres</p>
+        <h1>Para Mam&aacute;</h1>
+        <p class="intro">
+          La m&aacute;s linda, la m&aacute;s hermosa, la que siempre protege,
+          cuida y ama con todo el coraz&oacute;n.
+        </p>
+
+        <div class="actions">
+          <button class="primary-button" id="openLetter" type="button">
+            Iniciar juego
+          </button>
+          <button class="ghost-button" id="rainLove" type="button">
+            Activar lluvia de te amo
+          </button>
+          <button class="ghost-button" id="musicButton" type="button">
+            Reproducir m&uacute;sica
+          </button>
+        </div>
+      </div>
+
+      <div class="game-card" aria-label="Mini videojuego de amor para mam&aacute;">
+        <div class="game-hud">
+          <span>MAM&Aacute;</span>
+          <span>VIDA: 999</span>
+          <span>AMOR: MAX</span>
+        </div>
+
+        <div class="game-world" id="gameWorld">
+          <div class="cloud cloud-one"></div>
+          <div class="cloud cloud-two"></div>
+          <div class="pixel-sun"></div>
+          <div class="player">
+            <div class="head"></div>
+            <div class="hair"></div>
+            <div class="body"></div>
+            <div class="cape"></div>
+          </div>
+          <div class="shield">AMOR</div>
+          <button class="heart-gem gem-one" type="button" aria-label="Recoger coraz&oacute;n">
+            <span>Toca</span>
+          </button>
+          <button class="heart-gem gem-two" type="button" aria-label="Recoger coraz&oacute;n">
+            <span>Toca</span>
+          </button>
+          <button class="heart-gem gem-three" type="button" aria-label="Recoger coraz&oacute;n">
+            <span>Toca</span>
+          </button>
+          <div class="ground"></div>
+        </div>
+
+        <div class="quest-box">
+          <p class="quest-title">Nueva misi&oacute;n</p>
+          <p id="questText">Presiona iniciar y recoge los 3 corazones para desbloquear la carta.</p>
+          <div class="xp-bar"><span id="xpFill"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-panel locked" id="letter" aria-label="Carta para mam&aacute;">
+      <div class="letter">
+        <p class="small-title">Recompensa desbloqueada</p>
+        <h2>Mam&aacute;, te amo mucho.</h2>
+        <p>
+          Gracias por todo lo que has hecho por m&iacute;. Todo el tiempo contigo
+          la paso bonito, y aunque a veces tengamos discusiones, quiero que
+          sepas que te quiero much&iacute;simo.
+        </p>
+        <p>
+          Eres una madre protectora, que nos ha cuidado, nos ha protegido y
+          nos ha amado siempre con mucho cari&ntilde;o. Gracias por estar para m&iacute;,
+          por preocuparte y por dar tanto amor.
+        </p>
+        <p class="signature">Con mucho cari&ntilde;o, Anthony.</p>
+      </div>
+
+      <div class="promise-grid" aria-label="Mensajes bonitos para mam&aacute;">
+        <article>
+          <span>01</span>
+          <h3>Mi lugar seguro</h3>
+          <p>Gracias por protegerme y por hacerme sentir amado.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Mi mejor equipo</h3>
+          <p>Aunque discutamos a veces, siempre te quiero much&iacute;simo.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>La m&aacute;s linda</h3>
+          <p>La m&aacute;s hermosa, la m&aacute;s cari&ntilde;osa y la m&aacute;s especial.</p>
+        </article>
+      </div>
+
+      <div class="memory-strip" aria-label="Detalles bonitos para mam&aacute;">
+        <article>
+          <strong>Gracias por tus abrazos</strong>
+          <p>Porque muchas veces un abrazo tuyo arregla el d&iacute;a completo.</p>
+        </article>
+        <article>
+          <strong>Gracias por tu paciencia</strong>
+          <p>Por seguir cuid&aacute;ndome incluso cuando las cosas no son f&aacute;ciles.</p>
+        </article>
+        <article>
+          <strong>Gracias por tu amor</strong>
+          <p>Por amarnos con ese cari&ntilde;o que solo una mam&aacute; sabe dar.</p>
+        </article>
+        <article>
+          <strong>Siempre voy a quererte</strong>
+          <p>Hoy, ma&ntilde;ana y todos los d&iacute;as, con todo mi coraz&oacute;n.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    Te amo, mam&aacute;.
+  </div>
+
+  <audio id="song" src="Madre, Amiga, Fiel.mp3" preload="auto" autoplay loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
